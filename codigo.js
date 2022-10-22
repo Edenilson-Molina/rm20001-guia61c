@@ -76,7 +76,7 @@ function deleteProducto(id)
 		})
 		.then(response => response.json())
 		.then(data => {delresult = data;obtenerProductos()});
-}	
+}	alert(id);
 
 function obtenerProductos() {
 	  fetch('https://api-generator.retool.com/eI9mm6/productos')
